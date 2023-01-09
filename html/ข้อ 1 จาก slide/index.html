@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Q1 Index page</title>
+    <style type="text/css">
+        :root{
+            font-size: 1rem;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: block;
+            width: 80%;
+            margin: 1rem auto;
+            padding: 1rem;
+            border: 3px solid #FFF;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .container > img{
+          width: 150px; 
+          height: auto; 
+        }
+        .container > .motto{
+            display: block;
+            padding: 0.75rem;
+            border: 2px solid orangered;
+            width: 75%;
+            margin: 1rem auto;
+        }
+        .container > .motto>h3{
+            font-size: 1.5rem;
+            padding: 0.75rem;
+            color: orangered;
+        }
+        .container > .motto>p{
+            font-size: 1.25rem;
+            padding: 0.75rem;
+            font-style: italic;
+            color: orangered;
+        }
+        .container > .profile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75rem;
+            border: 2px solid #FFF;
+            width: 75%;
+            margin: 1rem auto;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        .container > .profile:hover{
+            border: 2px solid orangered;
+            background-color: yellow;
+        }
+        .container > .profile > p{
+            color: #FFF;
+            transition: 0.5s;
+        }
+        .container > .profile:hover p{
+            color: orangered;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .container > .friend{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.75rem;
+            border: 2px solid #FFF;
+            width: 75%;
+            margin: 1rem auto;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        .container > .friend:hover{
+            border: 2px solid orangered;
+            background-color: yellow;
+        }
+        .container > .friend > p{
+            color: #FFF;
+            transition: 0.5s;
+        }
+        .container > .friend:hover p{
+            color: orangered;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="logo.png" alt="My Logo">
+
+        <div class="motto">
+            <h3>My Motto</h3>
+            <p>I design and develop experiences that make people's live simple</p>
+        </div>
+
+        <a href="profile.html" class="profile">
+            <p>Go to my Profile</p>
+        </a>
+
+        <a href="friend.html" class="friend">
+            <p>See list of my friend in CC 13</p>
+        </a>
+
+    </div>
+</body>
+</html>

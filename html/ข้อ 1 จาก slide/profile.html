@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Q1 profile page</title>
+    <style type="text/css">
+        :root{
+            font-size: 1rem;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: block;
+            width: 80%;
+            margin: 1rem auto;
+            padding: 0.5rem 0.75rem;
+            border: 3px solid #FFF;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .container > .header{
+            width: 50%;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+            position: relative;
+        }
+        .container > .header> a{
+            text-decoration: none;
+            color: #FFF;
+            position: absolute;
+        }
+        .container > .header> .home{
+            top: 0rem;
+            left: -12rem;
+            transition: 0.5s;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+        }
+        .container > .header> .home:hover{
+            border: 2px solid orangered;
+            color: orangered;
+            background-color: yellow;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container > .header> .friend{
+            top: 0rem;
+            right: -12rem;
+            transition: 0.5s;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+        }
+        .container > .header> .friend:hover{
+            border: 2px solid orangered;
+            background-color: yellow;
+            color: orangered;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container > .header > h2{
+            font-size: 1.5rem;
+            color: #FFF;
+        }
+        .container > img{
+          width: 160px; 
+          height: auto;
+          border-radius: 50%;
+        }
+        .container > .detail {
+            display: block;
+            width: 75%;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+            border-radius: 0.5rem;
+        }
+        .container > .detail > .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+        .container > .detail > .row > .title{
+            font-size: 1.1rem;
+            color: #FFF;
+            font-weight: bold;
+        }
+        .container > .detail > .row > .titledetail{
+            font-size: 0.95rem;
+            color: #FFF;
+            font-style: italic;
+        }
+        .container > .detail > .row > img{
+            width: 200px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>MY PROFILE</h2>
+            <a href="index.html" class="home">Back to Homepage</a>
+            <a href="friend.html" class="friend">See my Friend List</a>
+        </div>
+
+        <img src="img.jpg" alt="this is me">
+
+        <div class="detail">
+
+            <div class="row">
+                <p class="title">Fullname :</p>
+                <p class="titledetail">Jattuporn Wangsate</p>
+                <p class="title"> / </p>
+                <p class="title">Nickname :</p>
+                <p class="titledetail">Tong</p>
+            </div>
+
+            <div class="row">
+                <p class="title">Address :</p>
+                <p class="titledetail">Samutprakarn</p>
+            </div>
+
+            <div class="row">
+                <p class="title">Speacialty :</p>
+                <p class="titledetail">Problem solving</p>
+                <p class="title"> / </p>
+                <p class="title">Hobby :</p>
+                <p class="titledetail">Play video game, watch movies</p>
+            </div>
+
+            <div class="row">
+                <img src="ROX-1.png" alt="play game">
+                <img src="movie.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

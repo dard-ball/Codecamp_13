@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Q1 Friend page</title>
+    <style type="text/css">
+        :root{
+            font-size: 1rem;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #121212;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 95%;
+            margin: 0.5rem auto;
+        }
+        th, td{
+            color: #FFF;
+        }
+        th{
+            border: 2px solid orangered;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        td{
+            border: 2px solid orangered;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+        }
+        .container{
+            display: block;
+            width: 90%;
+            margin: 1rem auto;
+            padding: 1rem;
+            border: 3px solid orangered;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .container > .header{
+            width: 50%;
+            margin: 1rem auto;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+            position: relative;
+        }
+        .container > .header>h2{
+            font-size: 1.5rem;
+            color: #FFF;
+        }
+        .container > .header> a{
+            text-decoration: none;
+            color: #FFF;
+            position: absolute;
+        }
+        .container > .header> .home{
+            top: 0rem;
+            left: -12rem;
+            transition: 0.5s;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+        }
+        .container > .header> .home:hover{
+            border: 2px solid orangered;
+            color: orangered;
+            background-color: yellow;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .container > .header> .profile{
+            top: 0rem;
+            right: -12rem;
+            transition: 0.5s;
+            padding: 0.5rem;
+            border: 2px solid #FFF;
+        }
+        .container > .header> .profile:hover{
+            border: 2px solid orangered;
+            background-color: yellow;
+            color: orangered;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h2>MY PROFILE</h2>
+            <a href="index.html" class="home">Back to Homepage</a>
+            <a href="profile.html" class="profile">See my Profile</a>
+        </div>
+
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Fullname</th>
+                <th>Nickname</th>
+                <th>Tel Number</th>
+                <th>Github site</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>Suphaluck Somkaew</td>
+                <td>-</td>
+                <td>011-111-1111</td>
+                <td>https://github.com/SSuphaluck/Homework_codecamp_13/tree/main/HTML</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>ปรมัตถ์ แถบเงิน</td>
+                <td>Ohm</td>
+                <td>022-222-2222</td>
+                <td>https://github.com/Ohm0025/Ohm0025.github.io/tree/main/Homework_codecamp_13/html</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Pornvut Pipatanadejsak</td>
+                <td>Best</td>
+                <td>033-333-3333</td>
+                <td>https://github.com/pornvutp/pornvutp.github.io/tree/main/homework_codecamp_13/html</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>ณัฐพงษ์ ทองพึง</td>
+                <td>เดียร์</td>
+                <td>044-444-4444</td>
+                <td>https://github.com/DearNatthaphong/Homework_Codecamp13_HTML</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Jattuporn Wangsate</td>
+                <td>Tong</td>
+                <td>084-708-8884</td>
+                <td>https://github.com/dard-ball/Devrxclub.git</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
