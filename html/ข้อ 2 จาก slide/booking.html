@@ -13,11 +13,185 @@
         }
         body{
             background-color: #EEE;
-            
+        }
+        .container{
+            width: 100%;
+            padding: 4rem;
+        }
+        form{
+            display: block;
+            width: 90%;
+            margin: 0rem auto;
+        }
+        form label{
+            display: block;
+            width: 100%;
+            font-weight: 0.75rem;
+            font-weight: bold;
+            color: #121212;
+        }
+        form input[type=text]{
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            margin: 0.75rem 0;
+            color: grey;
+            width: 95%;
+        }
+        form select{
+            margin: 0.75rem 0;
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            color: grey;
+            width: 95%;
+            border-radius: 0.25rem;
+        }
+        form input[type=date]{
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            margin: 0.75rem 0;
+            color: grey;
+            width: 95%;
+            border-radius: 0.25rem;
+        }
+        form input[type=number]{
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            margin: 0.75rem 0;
+            color: grey;
+            width: 70%;
+            border-radius: 0.25rem;
+        }
+        form .currency{
+            padding: 0.5rem;
+            font-size: 0.75rem;
+            margin: 0.75rem 0;
+            color: grey;
+            width: 70%;
+            border-radius: 0.25rem;
+        }
+        form input[type=submit]{
+            padding: 0.5rem 1rem;
+            border: 2px solid orangered;
+            border-radius: 0.25rem;
+            color: orangered;
+            background-color: transparent;
+            transition: 0.5s;
+        }
+        form input[type=submit]:hover{
+            background-color: orangered;
+            color: #FFF;
+            font-weight: bold;
+        }
+        .row{
+            display: flex;
+            grid-gap:1rem;
+            margin: 1rem;
+        }
+        .row > .block-25{
+            display: block;
+            width: 23.5%;
+        }
+        .row > .block-50{
+            display: block;
+            text-align: left;
+            width: 48.5%;
+        }
+        .row > .block-100{
+            display: flex;
+            width: 100%;
+            justify-content: left;
+            align-items: center;
+            padding: 2rem 0;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+
+        <form action="">
+            <div class="row">
+
+                <div class="block-50">
+                    <label for="flyfrom">Flying from</label>
+                    <select name="flyfrom" id="countryfrom" required>
+                        <option value="" selected>Please select</option>
+                        <option value="Karachi Pakistan">Karachi Pakistan</option>
+                        <option value="Bangkok Thailand">Bangkok Thailand</option>
+                        <option value="Tokyo Japan">Tokyo Japan</option>
+                        <option value="Seoul Korea">Seoul Korea</option>
+                        <option value="Sydney Australia">Sydney Australia</option>
+                        <option value="Islamabad Parkistan">Islamabad Parkistan</option>
+                    </select>
+                </div>
+
+                <div class="block-50">
+                    <label for="flyto">Flying to</label>
+                    <select name="flyto" id="countryto" required>
+                        <option value="" selected>Please select</option>
+                        <option value="Karachi Pakistan">Karachi Pakistan</option>
+                        <option value="Bangkok Thailand">Bangkok Thailand</option>
+                        <option value="Tokyo Japan">Tokyo Japan</option>
+                        <option value="Seoul Korea">Seoul Korea</option>
+                        <option value="Sydney Australia">Sydney Australia</option>
+                        <option value="Islamabad Parkistan">Islamabad Parkistan</option>
+                    </select>
+                </div>
+
+            </div>
     
+            <div class="row">
+                
+                <div class="block-50">
+                    <label for="depart">Departing</label>
+                    <input type="date" name="depart" required>
+                </div>
+
+                <div class="block-50">
+                    <label for="return">Returning</label>
+                    <input type="date" name="return" required>
+                </div>
+
+            </div>
+    
+            <div class="row">
+                
+                <div class="block-25">
+                    <label for="Adult">Adult</label>
+                    <input type="number" name="Adult" required min="1" placeholder="Please input number">
+                </div>
+
+                <div class="block-25">
+                    <label for="Child">Child</label>
+                    <input type="number" name="Child" required min="0" placeholder="Please input number">
+                </div>
+
+                <div class="block-25">
+                    <label for="Infant">Infant</label>
+                    <input type="number" name="Infant" required min="0" placeholder="Please input number">
+                </div>
+
+                <div class="block-25">
+                    <label for="Currency">Currency</label>
+                    <select name="Currency" id="Currency" class="currency" required>
+                        <option value="" selected>Please select</option>
+                        <option value="Bath" >THB</option>
+                        <option value="Yen" >JYP</option>
+                        <option value="Won" >KRW</option>
+                        <option value="Pakis rupee" >PKR</option>
+                    </select>
+                </div>
+
+            </div>
+    
+            <div class="row">
+                
+                <div class="block-100">
+                    <input type="submit">
+                </div>
+
+            </div>
+        </form>
+        
+    </div>
 </body>
 </html>
