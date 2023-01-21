@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = prompt("Input your score");
+        let grade;
+        if(score >= 80){
+            grade = "Congratulation! Your grade is A";
+        }else if(score <= 79 && score >= 70){
+            grade = "Well done! Your grade is B";
+        }else if(score <= 69 && score >= 60){
+            grade = "Good! Your grade is C";
+        }else if(score <= 59 && score >= 50){
+            grade = "Nice try! Your grade is D";
+        }else if(score < 50){
+            grade = "Try again! Your grade is F";
+        }
+        alert(grade);
+    </script>
+</body>
+</html>
