@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let login = prompt("Who are you ?");
+        let message;
+        if(login && login == "Admin"){
+            
+            password = prompt("Please input password");
+            if(password && password == "codecamp#13"){
+                message = "Welcome back !!";
+            }else if(password && password != "codecamp#13"){
+                message = "Wrong password";
+            }else{
+                    message = "Cancel";
+            }
+        }
+        else if (login && login != "Admin"){
+            message = "I don't know you !!";   
+        }
+        else{
+            message = "Cancel";
+        }
+        alert(message);
+    </script>
+</body>
+</html>

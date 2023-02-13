@@ -1,0 +1,19 @@
+ลำดับการทำงานการกดตู้เต้าบิน สำหรับสั่งเครื่องดื่ม 1 แก้ว เป็นรูปแบบ Pseudo code
+
+initialize glass to zero
+initialize money to zero
+initialize price to zero
+initialize exchange to money minus price 
+input name of drink
+system link name of drink into cost of drink
+input cost of drink by system
+while glass is less than or equal two
+	add cost of drink to price
+	add one to glass
+	if user choose payment as cash
+		user input money --> add amount of money that user pay to money
+			(money > price) ? exchange money : (money = price) ? do nothing : print not enough money  want more (price - money) bath
+	if user choose payment as promptpay or True wallet
+		System generate QR code
+		user input money by scan QR code
+	else print "Thank you for use our service"

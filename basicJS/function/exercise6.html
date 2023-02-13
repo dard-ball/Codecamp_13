@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function drawMethod(n){
+            let number = ""
+            
+            for(j=1; j<=n**2; j++){
+                number += j
+                if(j%n == 0) number +="\n"
+            }
+            
+            console.log(number)
+        }
+        drawMethod(2)
+        drawMethod(3)
+        drawMethod(4)
+    </script>
+</body>
+</html>
